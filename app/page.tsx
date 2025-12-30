@@ -10,7 +10,7 @@ export default function Portfolio() {
           <Link href="/" className="text-xl font-bold text-amber-500">
             Davi Rosa Gomes
           </Link>
-          <ul className="flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-8">
             <li>
               <Link
                 href="#sobre"
@@ -52,7 +52,7 @@ export default function Portfolio() {
         {/* Sobre Mim Section */}
         <section id="sobre" className="container mx-auto px-6 py-16">
           <h2
-            className="text-5xl font-bold text-center mb-12 text-amber-500"
+            className="text-3xl md:text-5xl font-bold text-center mb-12 text-amber-500"
             style={{
               textShadow:
                 "0 0 20px rgba(245, 158, 11, 0.6), 0 0 40px rgba(245, 158, 11, 0.4)",
@@ -139,7 +139,7 @@ export default function Portfolio() {
         {/* Experiências Section */}
         <section id="experiencias" className="container mx-auto px-6 py-16">
           <h2
-            className="text-5xl font-bold text-center mb-12 text-amber-500"
+            className="text-3xl md:text-5xl font-bold text-center mb-12 text-amber-500"
             style={{
               textShadow:
                 "0 0 20px rgba(245, 158, 11, 0.6), 0 0 40px rgba(245, 158, 11, 0.4)",
@@ -208,7 +208,7 @@ export default function Portfolio() {
         {/* Projetos Section */}
         <section id="projetos" className="container mx-auto px-6 py-16">
           <h2
-            className="text-5xl font-bold text-center mb-12 text-amber-500"
+            className="text-3xl md:text-5xl font-bold text-center mb-12 text-amber-500"
             style={{
               textShadow:
                 "0 0 20px rgba(245, 158, 11, 0.6), 0 0 40px rgba(245, 158, 11, 0.4)",
@@ -262,7 +262,7 @@ export default function Portfolio() {
         {/* Contato Section */}
         <section id="contato" className="container mx-auto px-6 py-16">
           <h2
-            className="text-5xl font-bold text-center mb-12 text-amber-500"
+            className="text-3xl md:text-5xl font-bold text-center mb-12 text-amber-500"
             style={{
               textShadow:
                 "0 0 20px rgba(245, 158, 11, 0.6), 0 0 40px rgba(245, 158, 11, 0.4)",
