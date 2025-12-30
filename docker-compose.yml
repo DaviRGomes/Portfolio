@@ -1,0 +1,20 @@
+services:
+  app:
+    container_name: portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3007:3007"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3007
+    networks:
+      - rede_global_nginx
+
+networks:
+  rede_global_nginx:
+    external: true
