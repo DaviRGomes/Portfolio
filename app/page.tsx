@@ -125,7 +125,7 @@ export default function Portfolio() {
                 <p className="text-center">
                   Minhas principais competências técnicas incluem{" "}
                   <span className="text-amber-500 font-semibold">
-                    Node.js, React/Next.js, PHP, PostgreSQL, Docker e AWS
+                    Java, Node.js, React/Next.js, PHP, PostgreSQL
                   </span>
                   . Sou apaixonado por Clean Architecture, SOLID e
                   microsserviços, sempre buscando criar soluções escaláveis e
@@ -152,7 +152,7 @@ export default function Portfolio() {
             ></span>
           </h2>
 
-          <div className="max-w-4xl mx-auto grid gap-6">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
             {[
               {
                 company: "JNJ Perfumes",
@@ -168,7 +168,7 @@ export default function Portfolio() {
                   "VPS",
                 ],
                 description:
-                  "Desenvolvimento de sistema financeiro com IA (LLMs) para automatizar a viabilidade de compra de estoque, substituindo análises manuais por decisões baseadas em dados.",
+                  "Desenvolvimento de plataforma web e APIs para gestão financeira com integração de LLMs. Atuação na automação da análise de viabilidade de estoque, transformando processos manuais em decisões baseadas em dados.",
               },
               {
                 company: "Sem Limite LTDA",
@@ -183,7 +183,7 @@ export default function Portfolio() {
                   "Debugging",
                 ],
                 description:
-                  "Debugging em sistemas PHP/Delphi e criação de APIs SQL, reduzindo em 40% o tempo de resolução de bugs críticos e garantindo 95% de disponibilidade do sistema.",
+                  "Desenvolvimento de soluções tecnológicas para a área financeira, conectando sistemas legados a plataformas modernas através de APIs. Atuação direta na manutenção de servidores para garantir a disponibilidade e a segurança do ambiente operacional.",
               },
               {
                 company: "Colégio Balão Magico",
@@ -198,7 +198,7 @@ export default function Portfolio() {
                   "AWS",
                 ],
                 description:
-                  "Desenvolvimento de sistema de gestão escolar para professores e funcionários, eliminando processos manuais e tornando o fluxo de trabalho 70% mais ágil.",
+                  "Desenvolvimento de um sistema completo de gestão escolar voltado para professores e funcionários. A solução foi projetada para a digitalização de processos internos, eliminando fluxos manuais e otimizando a rotina operacional da instituição.",
               },
               {
                 company: "INATEL (Huawei)",
@@ -211,7 +211,7 @@ export default function Portfolio() {
                   "Documentação Técnica",
                 ],
                 description:
-                  "Garantia da conformidade técnica em instalações de RF, atingindo 90% de aprovação em vistorias de primeira instância e eliminando deslocamentos desnecessários.",
+                  "Responsável pela análise técnica e conformidade de equipamentos de radiofrequência durante o processo de instalação. Atuei na validação de parâmetros e vistorias de campo, garantindo a integridade da infraestrutura e fornecendo suporte técnico imediato para assegurar o padrão de qualidade das equipes.",
               },
             ].map((exp, index) => (
               <div
@@ -274,19 +274,19 @@ export default function Portfolio() {
                   "Supabase",
                 ],
                 description:
-                  "Aplicação Full-Stack para automação de clínicas fonoaudiológicas, com ferramentas de avaliação de pronúncia e gestão de atendimentos.",
+                  "Desenvolvimento de plataforma web para automação de clínicas fonoaudiológicas, integrando gestão de agendamentos e atendimentos. Implementação de IA para análise prévia de fala e avaliação de pronúncia, otimizando o fluxo de diagnóstico clínico.",
               },
               {
                 title: "Jurisdex - Processos Judiciais",
                 tech: ["JavaScript", "Node.js", "Next.js", "PostgreSQL"],
                 description:
-                  "Plataforma para centralização de processos judiciais, automatizando a transição do fluxo manual para rotinas digitais seguras.",
+                  "Plataforma Full-Stack para centralização e gestão de processos judiciais. O projeto automatiza a transição do fluxo de trabalho manual para rotinas digitais seguras, otimizando a organização jurídica para o usuário final.",
               },
               {
                 title: "Previsão do Preço da Saca de Café",
                 tech: ["Python", "Machine Learning"],
                 description:
-                  "Solução de ML e Data Science para o mercado agrícola, modelando fatores de influência para mitigar a volatilidade do mercado.",
+                  "Solução de inteligência de dados voltada ao mercado agrícola para previsão de preços. O projeto utiliza modelos de Machine Learning para analisar fatores de influência e mitigar a volatilidade, auxiliando a tomada de decisão estratégica para produtores e investidores.",
               },
             ].map((project, index) => (
               <div
