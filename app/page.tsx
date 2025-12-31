@@ -158,6 +158,15 @@ export default function Portfolio() {
                 company: "JNJ Perfumes",
                 role: "Desenvolvedor Full Stack",
                 period: "12/2025 - Atual",
+                tech: [
+                  "Machine Learning",
+                  "React",
+                  "Node.js",
+                  "Express",
+                  "APIs",
+                  "MySQL",
+                  "VPS",
+                ],
                 description:
                   "Desenvolvimento de sistema financeiro com IA (LLMs) para automatizar a viabilidade de compra de estoque, substituindo análises manuais por decisões baseadas em dados.",
               },
@@ -165,6 +174,14 @@ export default function Portfolio() {
                 company: "Sem Limite LTDA",
                 role: "Suporte Ti II",
                 period: "09/2025 - Atual",
+                tech: [
+                  "PHP",
+                  "Delphi",
+                  "SQL",
+                  "APIs",
+                  "JavaScript",
+                  "Debugging",
+                ],
                 description:
                   "Debugging em sistemas PHP/Delphi e criação de APIs SQL, reduzindo em 40% o tempo de resolução de bugs críticos e garantindo 95% de disponibilidade do sistema.",
               },
@@ -172,6 +189,14 @@ export default function Portfolio() {
                 company: "Colégio Balão Magico",
                 role: "Desenvolvedor Full Stack",
                 period: "09/2025 - 12/2025",
+                tech: [
+                  "Java",
+                  "Spring Boot",
+                  "React",
+                  "PostgreSQL",
+                  "Supabase",
+                  "AWS",
+                ],
                 description:
                   "Desenvolvimento de sistema de gestão escolar para professores e funcionários, eliminando processos manuais e tornando o fluxo de trabalho 70% mais ágil.",
               },
@@ -179,6 +204,12 @@ export default function Portfolio() {
                 company: "INATEL (Huawei)",
                 role: "Estágio em Redes Móveis",
                 period: "08/2022 - 08/2024",
+                tech: [
+                  "Redes Móveis",
+                  "RF",
+                  "Conformidade Técnica",
+                  "Documentação Técnica",
+                ],
                 description:
                   "Garantia da conformidade técnica em instalações de RF, atingindo 90% de aprovação em vistorias de primeira instância e eliminando deslocamentos desnecessários.",
               },
@@ -198,6 +229,16 @@ export default function Portfolio() {
                   <span className="text-sm text-amber-500 font-semibold">
                     {exp.period}
                   </span>
+                </div>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {exp.tech.map((t, i) => (
+                    <span
+                      key={i}
+                      className="px-2 py-1 text-xs font-mono text-amber-400 border border-amber-500/20 rounded bg-amber-500/5"
+                    >
+                      {t}
+                    </span>
+                  ))}
                 </div>
                 <p className="text-gray-300">{exp.description}</p>
               </div>
@@ -225,19 +266,25 @@ export default function Portfolio() {
             {[
               {
                 title: "Pronus - Clínicas Fonoaudiológicas",
-                tech: "Java, Spring Boot, React",
+                tech: [
+                  "Java",
+                  "Spring Boot",
+                  "React",
+                  "PostgreSQL",
+                  "Supabase",
+                ],
                 description:
                   "Aplicação Full-Stack para automação de clínicas fonoaudiológicas, com ferramentas de avaliação de pronúncia e gestão de atendimentos.",
               },
               {
                 title: "Jurisdex - Processos Judiciais",
-                tech: "Node.js, Next.js, PostgreSQL",
+                tech: ["JavaScript", "Node.js", "Next.js", "PostgreSQL"],
                 description:
                   "Plataforma para centralização de processos judiciais, automatizando a transição do fluxo manual para rotinas digitais seguras.",
               },
               {
                 title: "Previsão do Preço da Saca de Café",
-                tech: "Python, Machine Learning",
+                tech: ["Python", "Machine Learning"],
                 description:
                   "Solução de ML e Data Science para o mercado agrícola, modelando fatores de influência para mitigar a volatilidade do mercado.",
               },
@@ -250,9 +297,16 @@ export default function Portfolio() {
                 <h3 className="text-xl font-bold text-amber-500 mb-2">
                   {project.title}
                 </h3>
-                <p className="text-sm text-amber-400 mb-3 font-mono">
-                  {project.tech}
-                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map((t, i) => (
+                    <span
+                      key={i}
+                      className="px-2 py-1 text-xs font-mono text-amber-400 border border-amber-500/20 rounded bg-amber-500/5"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
                 <p className="text-gray-300">{project.description}</p>
               </div>
             ))}
