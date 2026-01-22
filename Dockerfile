@@ -6,15 +6,16 @@ WORKDIR /app
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
-COPY package.json pnpm-lock.yaml* ./
+COPY Portfolio/package.json Portfolio/pnpm-lock.yaml* ./
 
 RUN pnpm i
 
 
 FROM base AS builder
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+WORKDIR /app/Portfolio
+COPY --from=deps /app/node_modules ./node_modules
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
@@ -35,13 +36,13 @@ ENV HOSTNAME "0.0.0.0"
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-COPY --from=builder /app/public ./public
+COPY --from=builder /app/Portfolio/public ./public
 
 RUN mkdir .next
 RUN chown nextjs:nodejs .next
 
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/Portfolio/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/Portfolio/.next/static ./.next/static
 
 USER nextjs
 
